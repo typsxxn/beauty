@@ -41,7 +41,7 @@
     height: 100%;
   }
   .dialog-content {
-    width: 400px;
+    width: 420px;
     position: fixed;
     max-height: 50%;
     overflow: auto;

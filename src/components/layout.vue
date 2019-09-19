@@ -3,23 +3,24 @@
     <div class="layout-head">
       <div class="layout-head-inner">
         <router-link :to="{path:'/'}">
-          <img src="../assets/logo.png" >
+          <img class="logo" src="../assets/logo.png" >
+          <img class="logo1" src="../assets/logo1.png" >
         </router-link>
         <div class="head-inner-nav">
           <ul class="nav-list">
             <li>{{username}}</li>
             <li v-if="username!==''" class="nav-pile">|</li>
 
-            <li v-if="username!==''" @click="logOut">logOut</li>
+            <li v-if="username!==''" @click="logOut">LogOut</li>
             <li v-if="username!==''" class="nav-pile">|</li>
 
-            <li v-if="username===''" @click="logClick" >logIn</li>
+            <li v-if="username===''" @click="logClick" >LogIn</li>
             <li  v-if="username===''" class="nav-pile">|</li>
 
-            <li  v-if="username===''" @click="regClick">register</li>
+            <li  v-if="username===''" @click="regClick">Register</li>
             <li  v-if="username===''"  class="nav-pile">|</li>
 
-            <li @click="aboutClick">about Us</li>
+            <li @click="aboutClick">About Us</li>
           </ul>
         </div>
       </div>
@@ -124,30 +125,38 @@
      }
 
   body {
-    background: #f0f2f5;
+    background: white;
     font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     font-size: 14px;
     color: #444;
   }
 
   .layout-head {
-    /*background: rgba(193, 193, 193, 0.06);*/
-    background: rgba(234, 234, 241, 0.8);
+    background: rgba(234, 234, 241,0.3);
+     /* background:#EAEAF1; */
     color: #1e1e1e;
     height: 90px;
     line-height: 90px;
     width: 100%;
     margin: 10px 10px;
     z-index: 10;
+    font-size:18px;
+    font-weight:500;
   }
   .layout-head-inner{
     width: 1200px;
     margin: 0 auto;
   }
-  .layout-head-inner img {
+  .logo{
     height:90px;
     width:90px;
     float: left;
+  }
+  .logo1{
+    height:90px;
+    width:500px;
+    float: left;
+    margin:0 180px;
   }
 
   .head-inner-nav {
@@ -213,6 +222,7 @@
     width:100px;
   }
   .g-form-error {
+
     color: red;
     padding-left: 5px;
     font-size: 8px;

@@ -102,14 +102,16 @@
     position: absolute;
     width: 1200px;
     height: 100%;
-    color: #000000;
-    background: rgba(128,128,128 ,0.5);
+    color: black;
+    font-weight: 700;
+    font-size:20px;
+    background: rgba(76, 76, 77, 0.3);
     opacity: .5;
     bottom: 0;
     height: 30px;
     text-align: left;
-    padding-left: 15px;
-    padding-top: 10px;
+    padding-left: 50px;
+    padding-top: 15px;
   }
   .slide-img {
     width: 100%;

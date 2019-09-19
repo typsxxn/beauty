@@ -69,7 +69,7 @@
     margin-left: 20px;
   }
   .brand-board {
-    background: #e3e4e8;
+    /* background: #e3e4e8; */
     padding: 10px 0;
   }
   .brand-board ul {
@@ -84,7 +84,7 @@
   .brand-board li.active,
   .brand-board li:hover {
     /*height:60px;*/
-   background: rgba(192,192,192 ,1);
+   background: rgba(234, 234, 241,0.8);
    /*  color: #fff;*/
   }
   .brand-board li a {
